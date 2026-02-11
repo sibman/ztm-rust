@@ -35,7 +35,7 @@ impl Store {
         match self.get_count(name) {
             Some(0) => println!("out of stock"),
             Some(num) => println!("Number of items {}", num),
-            None => println!("Item does not exists"),
+            None => println!("Item does not exist"),
         }
     }
 }
