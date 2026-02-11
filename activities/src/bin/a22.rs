@@ -23,6 +23,9 @@ fn clamp(n: i32, lower: i32, upper: i32) -> i32 {
 
 /// Divides a and b.
 fn div(a: i32, b: i32) -> Option<i32> {
+    if b == 0 {
+        return None;
+    }
     Some(a / b)
 }
 
@@ -32,3 +35,29 @@ fn concat(first: &str, second: &str) -> String {
 }
 
 fn main() {}
+
+#[cfg(test)]
+mod test {
+    use crate::{clamp, div, concat};
+
+    #[test]
+    fn clamp_test() {
+        assert_eq!(clamp(5, 3, 7), 5);
+        assert_eq!(clamp(2, 3, 7), 3);
+        assert_eq!(clamp(10, 3, 7), 7);
+    }
+    #[test]
+    fn div_test() {
+        assert_eq!(div(10, 2), Some(5));
+        assert_eq!(div(10, 3), Some(3));
+        assert_eq!(div(10, 4), Some(2));
+        assert_eq!(div(10, 0), None);
+
+    }
+    #[test]
+    fn concat_test() {
+        assert_eq!(concat("hello", "world"), "hello world");
+        assert_eq!(concat("hello", "rust"), "hello rust");
+        assert_eq!(concat("rust", "is"), "rust is");
+    }
+}

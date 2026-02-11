@@ -12,4 +12,15 @@
 //   to uppercase and lowercase
 //   * Try searching for: to_uppercase, to_lowercase
 
-fn main() {}
+use std::io;
+
+fn main() {
+    let mut buffer = String::new();
+    while io::stdin().read_line(&mut buffer).is_err() {
+        print!("Please enter your data again");
+    }
+    let upper = buffer.to_uppercase();
+    let lower = buffer.to_lowercase();
+
+    println!("Upper case: {}, lower case: {}", upper, lower);
+}

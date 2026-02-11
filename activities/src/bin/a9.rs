@@ -24,4 +24,5 @@ fn main() {
     } else {
         println!("y is equal to 5");
     }
+    println!("x: {}, y: {}", x, y);
 }

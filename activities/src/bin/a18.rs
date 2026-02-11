@@ -16,4 +16,34 @@
 //   * For the Ok variant, print any message you want
 //   * For the Err variant, print out the error message
 
-fn main() {}
+#[derive(Debug)]
+struct Adult {
+    name: String,
+    age: u8,
+}
+
+impl Adult {
+    fn new(name: &str, age: u8) -> Result<Adult, String> {
+        if age < 21 {
+            return Err("The person not in leagal age (less then 21)".to_owned());
+        }
+        Ok(Adult {
+            name: name.to_owned(),
+            age,
+        })
+    }
+}
+
+fn print_details(adult: &Adult) {
+    println!("Adult name : {} {} years of age", &adult.name, adult.age);
+}
+fn main() {
+    match Adult::new("Andrey", 52) {
+        Ok(adult) => print_details(&adult),
+        Err(result) => println!("{}", result),
+    };
+    match Adult::new("Andy", 16) {
+        Ok(adult) => print_details(&adult),
+        Err(result) => println!("{}", result),
+    };
+}

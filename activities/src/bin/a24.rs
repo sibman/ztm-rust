@@ -10,4 +10,8 @@
 
 fn main() {
     let data = vec![1, 2, 3, 4, 5];
+    let result = data.iter().map(|x| x * 3).filter(|x| *x > 10).collect::<Vec<_>>();
+    for item in result {
+        println!("{}", item);
+    }
 }
