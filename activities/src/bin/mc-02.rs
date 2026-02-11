@@ -84,4 +84,3 @@ fn main() {
     // should have an alert: 60-6 = 54 cilantro which is below the new threshold of 55
     change_quantity(&mut inventory, "cilantro", -6);
 }
-

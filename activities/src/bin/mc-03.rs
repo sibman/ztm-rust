@@ -68,4 +68,3 @@ fn main() {
     // Using the extended deposit method to deposit money
     account.deposit(20.0);
 }
-

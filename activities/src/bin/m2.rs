@@ -62,5 +62,3 @@ fn main() {
     check_id(&manager);
     check_id(&vendor);
 }
-
-

@@ -17,5 +17,3 @@
 //   * For the Err variant, print out the error message
 
 fn main() {}
-
-

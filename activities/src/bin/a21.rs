@@ -26,5 +26,3 @@ fn find_user(name: &str) -> Option<i32> {
 }
 
 fn main() {}
-
-

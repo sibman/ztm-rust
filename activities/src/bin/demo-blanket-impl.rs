@@ -19,4 +19,3 @@ fn main() {
     // using the `get_user_id` method from the `IdentifyUser` trait
     println!("User ID: {}", user.get_user_id());
 }
-

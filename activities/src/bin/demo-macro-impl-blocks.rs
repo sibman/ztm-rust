@@ -24,4 +24,3 @@ struct OtherTube {
 }
 
 fn main() {}
-

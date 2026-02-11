@@ -21,7 +21,7 @@
 //   by telling the thread to self-terminate
 // * Use `cargo test --bin a39` to test your program to ensure all cases are covered
 
-use crossbeam_channel::{unbounded, Receiver};
+use crossbeam_channel::{Receiver, unbounded};
 use std::thread::{self, JoinHandle};
 
 enum LightMsg {
@@ -74,5 +74,3 @@ mod test {
         }
     }
 }
-
-

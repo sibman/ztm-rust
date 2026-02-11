@@ -13,5 +13,3 @@ fn main() {
     let long = "this is a long message";
     println!("{}", longest(short, long))
 }
-
-

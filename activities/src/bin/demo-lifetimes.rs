@@ -42,4 +42,3 @@ fn new_ids() -> Cards {
 fn main() {
     let ids = new_ids();
 }
-

@@ -9,4 +9,3 @@ struct Ticket {
 }
 
 fn main() {}
-

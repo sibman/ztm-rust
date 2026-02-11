@@ -69,5 +69,3 @@ fn main() {
     assert_eq!(&msg, "Hello, world!");
     println!("{}", msg);
 }
-
-

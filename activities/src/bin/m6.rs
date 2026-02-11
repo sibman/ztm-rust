@@ -32,5 +32,3 @@ fn sample_fn_3(lhs: usize, rhs: usize) -> usize {
 }
 
 fn main() {}
-
-

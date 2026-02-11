@@ -13,5 +13,3 @@
 //   * The function must utilize impl trait as a function parameter
 
 fn main() {}
-
-

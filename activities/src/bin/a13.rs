@@ -10,6 +10,17 @@
 // * Determine whether to print the number or print "thirty" inside the loop
 // * Use the .len() function to print the number of elements in a vector
 
-fn main() {}
-
-
+fn main() {
+    let numbers = vec![10, 20, 30, 40];
+    let mut total = 0;
+    for num in &numbers {
+        if num == &30 {
+            println!("thirty");
+        } else {
+            println!("{}", num);
+        }
+        total += num;
+    }
+    println!("Total: {}", total);
+    println!("Len of vector {:?}", numbers.len());
+}

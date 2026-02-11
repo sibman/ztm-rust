@@ -24,5 +24,3 @@ enum Color {
 }
 
 fn main() {}
-
-

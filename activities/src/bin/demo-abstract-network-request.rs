@@ -40,4 +40,3 @@ impl App {
 fn main() -> Result<()> {
     Ok(())
 }
-

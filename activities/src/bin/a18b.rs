@@ -114,5 +114,3 @@ fn main() {
     println!("{brody_authorized:?}");
     println!("{catherine_authorized:?}");
 }
-
-

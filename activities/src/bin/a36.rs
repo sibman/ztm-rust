@@ -17,5 +17,3 @@ fn main() {
     // `stream` is an iterator of &[u64]
     let mut stream = data().chunks(2);
 }
-
-

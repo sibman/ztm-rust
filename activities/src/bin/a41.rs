@@ -17,7 +17,7 @@
 //   - crossbeam-channel
 //   - parking_lot
 
-use crossbeam_channel::{unbounded, Receiver, Sender};
+use crossbeam_channel::{Receiver, Sender, unbounded};
 use std::collections::VecDeque;
 use std::thread::{self, JoinHandle};
 use std::time::Duration;
@@ -161,5 +161,3 @@ fn main() {
 
     // print out the number of jobs completed here.
 }
-
-

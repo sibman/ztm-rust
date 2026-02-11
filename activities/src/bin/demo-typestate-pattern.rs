@@ -39,4 +39,3 @@ impl Employee<Training> {
 }
 
 fn main() {}
-
