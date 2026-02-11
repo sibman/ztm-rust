@@ -25,7 +25,7 @@ struct Adult {
 impl Adult {
     fn new(name: &str, age: u8) -> Result<Adult, String> {
         if age < 21 {
-            return Err("The person not in leagal age (less then 21)".to_owned());
+            return Err("The person is not of legal age (less than 21)".to_owned());
         }
         Ok(Adult {
             name: name.to_owned(),

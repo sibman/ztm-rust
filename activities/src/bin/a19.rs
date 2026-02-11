@@ -48,5 +48,5 @@ fn main() {
 
     store.print_details("Chairs");
     store.print_details("Couches");
-    store.print_details("KakogoXuya");
+    store.print_details("Futons");
 }
